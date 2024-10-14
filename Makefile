@@ -9,8 +9,8 @@ test:
 debug:
 	python -m pytest -vv --pdb # Debugger is invoked
 
-debugthree:
-	python -m pytest --pdb --maxfail=3 # Drop to PDB for first three failures
+one-test:
+	python -m pytest -vv tests/test_greeting.py::test_my_name
 
 format:
 	black *.py 
